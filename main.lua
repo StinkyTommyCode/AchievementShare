@@ -1,4 +1,4 @@
-local HTTP = require("http")
+local HTTP = require("src/http")
 
 
 local function onRegisterSuccessful(request)
