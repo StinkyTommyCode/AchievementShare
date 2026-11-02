@@ -4,8 +4,9 @@ local UTIL = { }
 function UTIL.DelayUntilNext(logicTick, delayName, func)
 	Event.Logic.Subscribe(delayName, function(logicEvent) 
 		if logicEvent.logicTick % logicTick == 0 then 
-			Event.Logic.Unsubscribe(delayName)
-			func()
+			if func() then
+				Event.Logic.Unsubscribe(delayName)
+			end
 		end
 	end)
 end
