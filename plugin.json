@@ -1,7 +1,7 @@
 {
 	"name": "Achievement Share",
 	"version": "0.0.1",
-	"contactEmailAddress": "MatthewTMWelmers@gmail.com",
+	"contactEmailAddress": "admin@StinkyTommy.com",
     "requiredPermissions": [ "trackingAccess", "httpAccess" ],
 	"urls": {
 		"database": "http://127.0.0.1:8080"	
